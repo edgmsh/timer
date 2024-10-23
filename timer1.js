@@ -7,6 +7,8 @@ const beep = (time) => {
 };
 
 for (let i = 2; i < process.argv.length; i++) {
-  beep(Number(process.argv[i]));
+  if (Number(process.argv[i] && Number(process.argv[i])) >0) {
+    beep(Number(process.argv[i]))
+  }
 }
 
